@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1> Image Gallery</h1>
+
+<div class="filters">
+
+<button onclick="filterImages('all')">All</button>
+<button onclick="filterImages('nature')">Nature</button>
+<button onclick="filterImages('city')">City</button>
+<button onclick="filterImages('animals')">Animals</button>
+
+</div>
+
+<div class="gallery">
+
+<img src="image/nature.png1" class="gallery-item nature" data-caption="Beautiful Nature">
+<img src="image/nature.png2" class="gallery-item nature" data-caption="Green Forest">
+
+<img src="image/night.png1.jpg" class="gallery-item city" data-caption="City Night">
+<img src="image/morden.png1.jpg" class="gallery-item city" data-caption="Modern Buildings">
+
+<img src="image/wild.png1" class="gallery-item animals" data-caption="Wild Animal">
+<img src="image/cute pet.png2" class="gallery-item animals" data-caption="Cute Pet">
+
+</div>
+
+<div class="lightbox">
+
+<span class="close">&times;</span>
+
+<button class="prev">❮</button>
+
+<div class="lightbox-content">
+
+<img class="lightbox-img">
+
+<p class="caption"></p>
+
+</div>
+
+<button class="next">❯</button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
